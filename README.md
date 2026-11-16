@@ -24,10 +24,10 @@ my-notes/
 我要為我的網站新增一篇筆記。請你嚴格依照下面提供的 `AGENTS.md` 規範來產出程式碼。
 
 1. 專案規範 (AGENTS.md)：
-[在此貼上 AGENTS.md 的完整內容]
+https://github.com/ShengMuu/digital-notes/blob/main/AGENTS.md
 
 2. 目前的首頁 (index.html)：
-[在此貼上目前 index.html 的完整內容]
+https://github.com/ShengMuu/digital-notes/blob/main/index.html
 
 3. 我要新增的筆記資料：
 - 日期：YYYY-MM-DD（例如：2026-11-20）
