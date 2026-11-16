@@ -43,4 +43,4 @@ https://github.com/ShengMuu/digital-notes/blob/main/index.html
 1. 使用 GitHub Pages 線上網站
 2. 下載整個壓縮檔並解壓
 
-如果不用上述方法， `index.html` 會讀不到 `style.css` 與 `\note` 下的所有日記檔案
+如果不用上述方法， `index.html` 會讀不到 `style.css` 與 `note/` 下的所有日記檔案
