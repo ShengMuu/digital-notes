@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Java 安裝紀錄 - 我的數位筆記本</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="container">
+    <a href="../index.html" class="back-link">← 返回首頁</a>
+
+    <article>
+      <header>
+        <h1>Java 安裝紀錄</h1>
+        <p class="meta">發布日期：2022-02-24 · 分類：<span class="tag">安裝筆記</span></p>
+      </header>
+
+      <h2>安裝 JDK</h2>
+      <ol>
+        <li>前往 <a href="https://www.oracle.com/java/technologies/downloads/#jdk20-windows" target="_blank" rel="noopener noreferrer">Oracle 官網</a> 下載 <code>jdk-20</code> 版本（官方每 3 年提供一版長期支援版本）。</li>
+        <li>將檔案下載並安裝至 <code>C:\Program Files\Java\jdk-20</code>。</li>
+        <li>新增安裝路徑至系統環境變數 <code>JAVA_HOME</code>。</li>
+        <li>將路徑正式收錄進系統變數 <code>Path</code>，參數設定為 <code>%JAVA_HOME%\bin</code>。</li>
+        <li>完成設定後，即可在系統中編譯並執行 Java 環境（註：上一次安裝紀錄約在 2023 年 1 至 2 月左右）。</li>
+      </ol>
+
+      <h2>何為 JDK？</h2>
+      <p><strong>注意事項</strong>：<code>JDK</code> 並不是 Java 語言本身，它其實是一個包含開發工具與執行環境的大集合，主要由以下三個大元件組成：</p>
+      <ol>
+        <li><strong>Java 程式語言</strong></li>
+        <li><strong>工具程式</strong>：如 <code>javac</code>、<code>javadoc</code> 等。</li>
+        <li><strong>JRE</strong>：內部包含了 <code>Java SE API</code> 與 <code>JVM</code>。</li>
+      </ol>
+
+      <h2>編譯與執行流程（CMD）</h2>
+      <ol>
+        <li><strong>Edit（編輯）</strong>：撰寫 Java 原始碼。</li>
+        <li><strong>Compile（編譯）</strong>：使用 Java 語言編譯器 <code>javac</code>，透過指令 <code>javac &lt;className&gt;.java</code> 將 <code>.java</code> 檔編譯成 <code>&lt;className&gt;.class</code>。</li>
+        <li><strong>Load（載入）</strong>：JRE 裡面的 JVM 調用 <code>java</code>（指令 <code>java &lt;className&gt;</code>），將 <code>.class</code> 檔放入記憶體中。</li>
+        <li><strong>Bytecode Verification（位元組碼驗證）</strong>：確認該 <code>.class</code> 檔遵守規範，且不會損壞電腦上的文件或系統。</li>
+        <li><strong>Execute（執行）</strong>：將 bytecodes 轉換成機器語言並正式執行。</li>
+      </ol>
+
+      <h2>IDE 開發環境</h2>
+      <p>開發工具使用 <strong>VS Code</strong>，只要在擴充功能商店下載 Java 的延伸模組即可開始撰寫程式碼。</p>
+
+      <h2>HelloWorld 範例</h2>
+      <pre><code>public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("HelloWorld");
+    }
+}</code></pre>
+      <p><strong>注意</strong>：Java 檔案名稱必須與 <code>public class</code> 的名稱完全相同，且一個檔案中 <code>public class</code> 只能有一個。</p>
+    </article>
+  </div>
+</body>
+</html>

@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #FAFAFA;
+  color: #222222;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans TC", sans-serif;
+  line-height: 1.8;
+  padding: 3rem 1.5rem;
+}
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+header {
+  border-bottom: 1px solid #E5E7EB;
+  padding-bottom: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle, .meta {
+  color: #666666;
+  font-size: 0.95rem;
+}
+
+a {
+  color: #2563EB;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* 首頁筆記列表 */
+.note-list {
+  list-style: none;
+}
+
+.note-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 1rem 0;
+  border-bottom: 1px solid #E5E7EB;
+  gap: 1rem;
+}
+
+.note-date {
+  color: #666666;
+  font-size: 0.9rem;
+  font-family: monospace;
+  flex-shrink: 0;
+}
+
+.note-title {
+  font-size: 1.1rem;
+  font-weight: 500;
+  flex-grow: 1;
+}
+
+.tag {
+  background-color: #E5E7EB;
+  color: #374151;
+  font-size: 0.8rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+/* 筆記內頁排版 */
+.back-link {
+  display: inline-block;
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+}
+
+article h2 {
+  font-size: 1.35rem;
+  margin-top: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+article p, article ul, article ol {
+  margin-bottom: 1.2rem;
+}
+
+article ul, article ol {
+  padding-left: 1.5rem;
+}
+
+code {
+  background-color: #EFEFEF;
+  padding: 0.15rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+pre {
+  background-color: #EFEFEF;
+  padding: 1rem;
+  border-radius: 6px;
+  overflow-x: auto;
+  margin-bottom: 1.2rem;
+}
+
+pre code {
+  background-color: transparent;
+  padding: 0;
+}
