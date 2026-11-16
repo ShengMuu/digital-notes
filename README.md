@@ -10,7 +10,7 @@
 
 ### 專案結構
 ```text
-my-notes/
+digital-notes/
 ├── AGENTS.md           # AI 協作與開發規範書
 ├── README.md           # 專案說明文件
 ├── index.html          # 網站首頁（筆記列表與分類索引）
@@ -38,3 +38,9 @@ https://github.com/ShengMuu/digital-notes/blob/main/index.html
 請輸出兩樣東西給我：
 1. 新筆記的完整 HTML 程式碼（並告訴我這支檔案應該命名為什麼，以及要放在哪個資料夾）。
 2. 更新後的完整 `index.html` 程式碼（請確保新文章依時間倒序放在正確位置）。
+
+## DEMO 方式
+1. 使用 GitHub Pages 線上網站
+2. 下載整個壓縮檔並解壓
+
+如果不用上述方法， `index.html` 會讀不到 `style.css` 與 `\note` 下的所有日記檔案
